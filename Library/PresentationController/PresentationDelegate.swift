@@ -12,10 +12,6 @@ class PresentationDelegate: NSObject, UIViewControllerTransitioningDelegate {
     var duration: TimeInterval = 1
     var sharedElements: [(UIView, UIView?, Bool)] = []
     
-    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return PresentationController(presentedViewController: presented, presenting: presenting)
-    }
-    
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return DismissalAnimation(duration: duration, sharedElements: sharedElements)
     }

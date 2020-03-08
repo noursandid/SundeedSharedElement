@@ -15,9 +15,8 @@
 		0643B6AC24153C120088AC4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0643B6AA24153C120088AC4C /* LaunchScreen.storyboard */; };
 		0643B6B724153C120088AC4C /* SundeedSharedElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643B6B624153C120088AC4C /* SundeedSharedElementTests.swift */; };
 		0643B6D524153ED10088AC4C /* NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643B6CF24153ED10088AC4C /* NavigationDelegate.swift */; };
-		0643B6D624153ED10088AC4C /* PresentationControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643B6D024153ED10088AC4C /* PresentationControllerHelper.swift */; };
+		0643B6D624153ED10088AC4C /* SundeedSharedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643B6D024153ED10088AC4C /* SundeedSharedElement.swift */; };
 		0643B6D724153ED10088AC4C /* DismissalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643B6D124153ED10088AC4C /* DismissalAnimation.swift */; };
-		0643B6D824153ED10088AC4C /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643B6D224153ED10088AC4C /* PresentationController.swift */; };
 		0643B6D924153ED10088AC4C /* PresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643B6D324153ED10088AC4C /* PresentationDelegate.swift */; };
 		0643B6DA24153ED10088AC4C /* PresentationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643B6D424153ED10088AC4C /* PresentationAnimation.swift */; };
 /* End PBXBuildFile section */
@@ -45,9 +44,8 @@
 		0643B6B624153C120088AC4C /* SundeedSharedElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SundeedSharedElementTests.swift; sourceTree = "<group>"; };
 		0643B6B824153C120088AC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0643B6CF24153ED10088AC4C /* NavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDelegate.swift; sourceTree = "<group>"; };
-		0643B6D024153ED10088AC4C /* PresentationControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationControllerHelper.swift; sourceTree = "<group>"; };
+		0643B6D024153ED10088AC4C /* SundeedSharedElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SundeedSharedElement.swift; sourceTree = "<group>"; };
 		0643B6D124153ED10088AC4C /* DismissalAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissalAnimation.swift; sourceTree = "<group>"; };
-		0643B6D224153ED10088AC4C /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
 		0643B6D324153ED10088AC4C /* PresentationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationDelegate.swift; sourceTree = "<group>"; };
 		0643B6D424153ED10088AC4C /* PresentationAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,12 +121,11 @@
 		0643B6C224153DA10088AC4C /* PresentationController */ = {
 			isa = PBXGroup;
 			children = (
-				0643B6D124153ED10088AC4C /* DismissalAnimation.swift */,
-				0643B6CF24153ED10088AC4C /* NavigationDelegate.swift */,
 				0643B6D424153ED10088AC4C /* PresentationAnimation.swift */,
-				0643B6D224153ED10088AC4C /* PresentationController.swift */,
-				0643B6D024153ED10088AC4C /* PresentationControllerHelper.swift */,
+				0643B6D124153ED10088AC4C /* DismissalAnimation.swift */,
 				0643B6D324153ED10088AC4C /* PresentationDelegate.swift */,
+				0643B6CF24153ED10088AC4C /* NavigationDelegate.swift */,
+				0643B6D024153ED10088AC4C /* SundeedSharedElement.swift */,
 			);
 			path = PresentationController;
 			sourceTree = "<group>";
@@ -234,9 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0643B6D624153ED10088AC4C /* PresentationControllerHelper.swift in Sources */,
+				0643B6D624153ED10088AC4C /* SundeedSharedElement.swift in Sources */,
 				0643B6A424153C0E0088AC4C /* ViewController.swift in Sources */,
-				0643B6D824153ED10088AC4C /* PresentationController.swift in Sources */,
 				0643B6A024153C0E0088AC4C /* AppDelegate.swift in Sources */,
 				0643B6D924153ED10088AC4C /* PresentationDelegate.swift in Sources */,
 				0643B6D524153ED10088AC4C /* NavigationDelegate.swift in Sources */,

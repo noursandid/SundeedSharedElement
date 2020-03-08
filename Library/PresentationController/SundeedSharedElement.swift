@@ -78,14 +78,10 @@ public class SundeedPresentationController: AnimationHelper {
         presentedViewController?.transitioningDelegate = presentationDelegate
         return self
     }
-    
-    
-    
 }
 
-public class NavigationDelegateHelper: AnimationHelper {
-    public static let shared = NavigationDelegateHelper()
-
+public class SundeedNavigationDelegate: AnimationHelper {
+    public static let shared = SundeedNavigationDelegate()
     @discardableResult
     func push(_ viewController: UIViewController) -> Self {
         pushedViewController = viewController
