@@ -12,7 +12,7 @@
 ----
 ### Manually
 
-You can easily download the project and copy the files into your own project and voilà you have it ready to use
+You can easily download the project and copy the files in Library/PresentationController folder into your own project and voilà you have it ready to use
 
 
 # Documentation
