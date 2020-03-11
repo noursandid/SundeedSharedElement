@@ -10,24 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
     var backgroundColor: UIColor = .blue
+    @IBOutlet weak var viewtoAnimate: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = backgroundColor
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            let viewController = self.storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
-            viewController.backgroundColor = .green
-            SundeedPresentationController.shared.present(viewController)
+    @IBAction func buttonPessed(_ sender: Any) {
+        let secondViewController = SecondViewController(nibName: "SecondViewController", bundle: .main)
+        SundeedPresentationController.shared.present(secondViewController)
             .onTopOf(self)
-            .withDuration(3)
-                
-            .now()
-        }
+            .withDuration(0.3)
+            .withSharedElement(from: self.viewtoAnimate, to: secondViewController.viewToAnimate)
+            .withInteractionDirection(.down)
+        .now()
     }
-
-
 }
-

@@ -11,6 +11,7 @@ import UIKit
 class NavigationDelegate: NSObject, UINavigationControllerDelegate {
     var duration: TimeInterval = 1
     var sharedElements: [(UIView, UIView?, Bool)] = []
+    var interactor: SundeedInteractor?
     
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         switch operation {
@@ -23,5 +24,9 @@ class NavigationDelegate: NSObject, UINavigationControllerDelegate {
         default:
             return nil
         }
+    }
+    
+    func navigationController(_ navigationController: UINavigationController, interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return animationController is DismissalAnimation ? (interactor?.hasStarted ?? false) ? interactor : nil : nil
     }
 }

@@ -38,8 +38,8 @@ class DismissalAnimation: NSObject, UIViewControllerAnimatedTransitioning {
         containerView.addSubview(toView)
         copySharedElements = sharedElements
             .map({ (fromView, toView, isDifferent) -> (UIView, UIView?, Bool) in
-                guard var toViewCopy = toView?.snapshotView(afterScreenUpdates: true),
-                var fromViewCopy = fromView.snapshotView(afterScreenUpdates: true) else {
+                guard var toViewCopy = toView?.snapshotView(afterScreenUpdates: false),
+                var fromViewCopy = fromView.snapshotView(afterScreenUpdates: false) else {
                     return (fromView, toView, isDifferent)
                 }
                 

@@ -19,6 +19,8 @@
 		0643B6D724153ED10088AC4C /* DismissalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643B6D124153ED10088AC4C /* DismissalAnimation.swift */; };
 		0643B6D924153ED10088AC4C /* PresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643B6D324153ED10088AC4C /* PresentationDelegate.swift */; };
 		0643B6DA24153ED10088AC4C /* PresentationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643B6D424153ED10088AC4C /* PresentationAnimation.swift */; };
+		0643B70E2417E6AD0088AC4C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643B70C2417E6AD0088AC4C /* SecondViewController.swift */; };
+		0643B70F2417E6AD0088AC4C /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0643B70D2417E6AD0088AC4C /* SecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		0643B6D124153ED10088AC4C /* DismissalAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissalAnimation.swift; sourceTree = "<group>"; };
 		0643B6D324153ED10088AC4C /* PresentationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationDelegate.swift; sourceTree = "<group>"; };
 		0643B6D424153ED10088AC4C /* PresentationAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationAnimation.swift; sourceTree = "<group>"; };
+		0643B70C2417E6AD0088AC4C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		0643B70D2417E6AD0088AC4C /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 		0643B69E24153C0E0088AC4C /* SundeedSharedElement */ = {
 			isa = PBXGroup;
 			children = (
+				0643B70B2417E6540088AC4C /* SecondViewController */,
 				0643B69F24153C0E0088AC4C /* AppDelegate.swift */,
 				0643B6A124153C0E0088AC4C /* SceneDelegate.swift */,
 				0643B6A324153C0E0088AC4C /* ViewController.swift */,
@@ -128,6 +133,15 @@
 				0643B6D024153ED10088AC4C /* SundeedSharedElement.swift */,
 			);
 			path = PresentationController;
+			sourceTree = "<group>";
+		};
+		0643B70B2417E6540088AC4C /* SecondViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0643B70C2417E6AD0088AC4C /* SecondViewController.swift */,
+				0643B70D2417E6AD0088AC4C /* SecondViewController.xib */,
+			);
+			path = SecondViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0643B70F2417E6AD0088AC4C /* SecondViewController.xib in Resources */,
 				0643B6AC24153C120088AC4C /* LaunchScreen.storyboard in Resources */,
 				0643B6A924153C120088AC4C /* Assets.xcassets in Resources */,
 				0643B6A724153C0E0088AC4C /* Main.storyboard in Resources */,
@@ -234,6 +249,7 @@
 				0643B6D624153ED10088AC4C /* SundeedSharedElement.swift in Sources */,
 				0643B6A424153C0E0088AC4C /* ViewController.swift in Sources */,
 				0643B6A024153C0E0088AC4C /* AppDelegate.swift in Sources */,
+				0643B70E2417E6AD0088AC4C /* SecondViewController.swift in Sources */,
 				0643B6D924153ED10088AC4C /* PresentationDelegate.swift in Sources */,
 				0643B6D524153ED10088AC4C /* NavigationDelegate.swift in Sources */,
 				0643B6D724153ED10088AC4C /* DismissalAnimation.swift in Sources */,
